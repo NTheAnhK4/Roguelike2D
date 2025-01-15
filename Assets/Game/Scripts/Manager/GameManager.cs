@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class GameManager : Singleton<GameManager>
 {
-    private int m_FoodAmount = 100;
     public PlayerController PlayerController;
     public BoardManager BoardManager;
     public TurnManager TurnManager { get; private set; }
@@ -23,7 +22,6 @@ public class GameManager : Singleton<GameManager>
 
     void OnTurnHappen()
     {
-        m_FoodAmount -= 1;
-        Debug.Log("Current amount of food " + m_FoodAmount);
+        EnergyManager.Instance.TakeEnegy(1);
     }
 }
