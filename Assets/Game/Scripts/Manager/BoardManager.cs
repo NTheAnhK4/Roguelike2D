@@ -22,7 +22,7 @@ public class BoardManager : MonoBehaviour
 
     private CellData[,] m_BoardData;
 
-    private void Init()
+    public void Init()
     {
         m_TileMap = transform.GetComponentInChildren<Tilemap>();
         m_Grid = transform.GetComponent<Grid>();
@@ -56,10 +56,7 @@ public class BoardManager : MonoBehaviour
 
    
 
-    private void Start()
-    {
-        Init();
-    }
+    
 
     public Vector3 CellToWorld(Vector2Int cellIndex)
     {

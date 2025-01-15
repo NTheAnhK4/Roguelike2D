@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="78832c7b-07e4-472c-b017-e2d07570bc2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Roguelike2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Roguelike2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Manager/BoardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Manager/BoardManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +101,7 @@
       <workItem from="1736906771570" duration="596000" />
       <workItem from="1736907849590" duration="3041000" />
       <workItem from="1736931892480" duration="1576000" />
+      <workItem from="1736948305956" duration="596000" />
     </task>
     <servers />
   </component>

@@ -50,7 +50,11 @@ public class PlayerController : MonoBehaviour
         if (hasMoved)
         {
             BoardManager.CellData cellData = m_Board.GetCellData(newCellTarget);
-            if (cellData != null && cellData.Passable) MoveTo(newCellTarget);
+            if (cellData != null && cellData.Passable)
+            {
+                GameManager.Instance.TurnManager.Tick();
+                MoveTo(newCellTarget);
+            }
         }
     }
 }
