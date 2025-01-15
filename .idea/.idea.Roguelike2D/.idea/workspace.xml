@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="78832c7b-07e4-472c-b017-e2d07570bc2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Roguelike2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Roguelike2D/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/SandTheme.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/SandTheme.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/SnowTheme.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/SnowTheme.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/SnowTheme2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/SnowTheme2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Attack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Attack.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Defense.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Defense.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Life.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Life.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Speed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UI/Speed.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UrbanTheme.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UrbanTheme.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UrbanTheme2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/_Assets/Sprites/UrbanTheme2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Manager/BoardManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Manager/BoardManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +19,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,26 +35,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "logicGame",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;logicGame&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
-      "C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
-      "C:\\Users\\lenovo\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\lenovo\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\lenovo\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe" />
@@ -103,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1736906765848</updated>
       <workItem from="1736906771570" duration="596000" />
-      <workItem from="1736907849590" duration="1073000" />
+      <workItem from="1736907849590" duration="3041000" />
+      <workItem from="1736931892480" duration="1576000" />
     </task>
     <servers />
   </component>
