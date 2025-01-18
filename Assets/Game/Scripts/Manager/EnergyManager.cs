@@ -1,4 +1,5 @@
 
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,8 +8,8 @@ public class EnergyManager : Singleton<EnergyManager>
 {
     [SerializeField] private Image energyImage;
     [SerializeField] private TextMeshProUGUI energyText;
-    [SerializeField] private float curEnergyValue = 100f;
-    [SerializeField] private float maxEnergyValue = 100;
+    [SerializeField] private int curEnergyValue = 10;
+    [SerializeField] private int maxEnergyValue = 10;
    
     private void Init()
     {
@@ -26,10 +27,22 @@ public class EnergyManager : Singleton<EnergyManager>
         Init();
     }
 
-    public void TakeEnegy(float energy = 1)
+    private void SetEnergyUI()
     {
-        curEnergyValue -= energy;
-        energyImage.fillAmount = curEnergyValue / maxEnergyValue;
+        energyImage.fillAmount = 1.0f * curEnergyValue / maxEnergyValue;
         energyText.text = curEnergyValue + "/" + maxEnergyValue;
     }
+    public void TakeEnegy(int energy = 1)
+    {
+        curEnergyValue = Math.Min(curEnergyValue - 1, 0);
+        if(curEnergyValue == 0) ObserverManager.Notify(EventId.Lose);
+        SetEnergyUI();
+    }
+
+    public void AddEnergy(int energy)
+    {
+        curEnergyValue = Math.Min(curEnergyValue + energy, maxEnergyValue);
+        SetEnergyUI();
+    }
+    
 }

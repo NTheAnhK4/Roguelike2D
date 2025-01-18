@@ -446,7 +446,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 2057739140}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -488,8 +488,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1050008926}
   - component: {fileID: 1050008925}
+  - component: {fileID: 1050008927}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: _____Manager_____
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -524,6 +525,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1050008927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050008924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c65264c536d8845a455ebcbf3e0535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  foodHolder: {fileID: 0}
+  FoodPrefabList:
+  - {fileID: 8720531580734389754, guid: 41b8c7702342b8c49a110f0b0f6963bf, type: 3}
+  - {fileID: 9201532085946283602, guid: bb481f24831beb645b1c3b380ea15388, type: 3}
+  - {fileID: 3369157194936513830, guid: f9dd8eb1217db4d4da6e079861405375, type: 3}
 --- !u!1 &1296264294
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_TileMap: {fileID: 0}
   m_Grid: {fileID: 0}
+  WallPrefab: {fileID: 2775687162522941472, guid: 78806398c443eb846a0be1f3bf42d36b, type: 3}
   Width: 8
   Height: 8
   GroundTiles:
@@ -641,7 +660,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 77e9d444b67108646a1ff984f330b402, type: 2}
   - {fileID: 11400000, guid: 8b1b7aacd52d121419635355402251c8, type: 2}
   - {fileID: 11400000, guid: 53a950c25f7f7964a81ff16180ef6954, type: 2}
-  Player: {fileID: 1986281213}
 --- !u!156049354 &1316402720
 Grid:
   m_ObjectHideFlags: 0
