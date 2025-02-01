@@ -10,8 +10,15 @@ public class EnergyManager : Singleton<EnergyManager>
     [SerializeField] private TextMeshProUGUI energyText;
     [SerializeField] private int curEnergyValue = 10;
     [SerializeField] private int maxEnergyValue = 10;
-   
-    private void Init()
+
+    public void Init(int energy)
+    {
+        curEnergyValue = energy;
+        maxEnergyValue = energy;
+        SetEnergyUI();
+    }
+
+    private void LoadComponent()
     {
         if (energyImage == null)  energyImage = transform.Find("Mask").Find("Energy").GetComponent<Image>();
         if (energyText == null) energyText = transform.GetComponentInChildren<TextMeshProUGUI>();
@@ -19,12 +26,12 @@ public class EnergyManager : Singleton<EnergyManager>
 
     private void Reset()
     {
-        Init();
+        LoadComponent();
     }
 
     private void Start()
     {
-        Init();
+        LoadComponent();
     }
 
     private void SetEnergyUI()
@@ -34,7 +41,7 @@ public class EnergyManager : Singleton<EnergyManager>
     }
     public void TakeEnegy(int energy = 1)
     {
-        curEnergyValue = Math.Min(curEnergyValue - 1, 0);
+        curEnergyValue = Math.Max(curEnergyValue - energy, 0);
         if(curEnergyValue == 0) ObserverManager.Notify(EventId.Lose);
         SetEnergyUI();
     }

@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &857745086361021114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3832730008590891006}
+  - component: {fileID: 7766718768493276456}
+  - component: {fileID: 4889424035511063299}
+  m_Layer: 0
+  m_Name: _____Manager_____
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3832730008590891006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857745086361021114}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7766718768493276456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857745086361021114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64c34c270992a3d41985cca0e97a7fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerController: {fileID: 0}
+  BoardManager: {fileID: 0}
+--- !u!114 &4889424035511063299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857745086361021114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c65264c536d8845a455ebcbf3e0535, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectHolder: {fileID: 0}
+  FoodPrefabList:
+  - {fileID: 8720531580734389754, guid: 41b8c7702342b8c49a110f0b0f6963bf, type: 3}
+  - {fileID: 9201532085946283602, guid: bb481f24831beb645b1c3b380ea15388, type: 3}
+  - {fileID: 3369157194936513830, guid: f9dd8eb1217db4d4da6e079861405375, type: 3}
+  WallPrefabList:
+  - {fileID: 2166915120369845848, guid: 78806398c443eb846a0be1f3bf42d36b, type: 3}
+  - {fileID: 5499928978752016474, guid: 3c215a0ca559fec4e9c0489d6d534279, type: 3}
+  - {fileID: 1849060346226374470, guid: 4a48ec5cafe5f684aaa30856d10bd967, type: 3}

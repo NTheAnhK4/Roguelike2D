@@ -32,7 +32,7 @@ public class WallObject : CellObject
         }
         GameManager.Instance.BoardManager.SetCellTile(m_Cell,OriginalTile);
         PoolingManager.Despawn(gameObject);
-        GameManager.Instance.BoardManager.SetCellContainObject(m_Cell,null);
+        
         return true;
     }
 

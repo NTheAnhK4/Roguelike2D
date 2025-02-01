@@ -13,7 +13,7 @@ public class ExitCellObject : CellObject
         GameManager.Instance.BoardManager.SetCellTile(cell,EndTile);
     }
 
-    public override void PlayerEntered(Vector2Int m_CellPosition)
+    public override void PlayerEntered()
     {
         GameManager.Instance.NewLevel();
     }
