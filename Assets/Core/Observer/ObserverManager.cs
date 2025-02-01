@@ -44,5 +44,6 @@ public static class ObserverManager
 
 public enum EventId
 {
-    Lose
+    Lose,
+    NewGame
 }

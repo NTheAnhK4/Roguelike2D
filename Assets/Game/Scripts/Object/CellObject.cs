@@ -10,7 +10,7 @@ public class CellObject : MonoBehaviour
     {
         m_Cell = cell;
     } 
-    public virtual void PlayerEntered(Vector2Int m_Position)
+    public virtual void PlayerEntered()
     {
         
     }
