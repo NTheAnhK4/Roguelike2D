@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="78832c7b-07e4-472c-b017-e2d07570bc2d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Roguelike2D/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Roguelike2D/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Player/PlayerController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ImproveGraphics",
+    "git-widget-placeholder": "Animation",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -111,7 +112,8 @@
       <workItem from="1737162522090" duration="595000" />
       <workItem from="1737188798915" duration="802000" />
       <workItem from="1738378699447" duration="1306000" />
-      <workItem from="1738384172313" duration="2390000" />
+      <workItem from="1738384172313" duration="2846000" />
+      <workItem from="1738416411879" duration="1101000" />
     </task>
     <servers />
   </component>
