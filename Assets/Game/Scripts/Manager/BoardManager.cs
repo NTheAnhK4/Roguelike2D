@@ -28,11 +28,16 @@ public class BoardManager : MonoBehaviour
 
     private CellData[,] m_BoardData;
 
+    private void Awake()
+    {
+        m_TileMap = transform.GetComponentInChildren<Tilemap>();
+        m_Grid = transform.GetComponent<Grid>();
+    }
+
     public void Init()
     {
         
-        m_TileMap = transform.GetComponentInChildren<Tilemap>();
-        m_Grid = transform.GetComponent<Grid>();
+        
         m_EmptyCellList = new List<Vector2Int>();
         m_BoardData = new CellData[Width, Height];
 
@@ -108,7 +113,7 @@ public class BoardManager : MonoBehaviour
             Vector2Int coord = m_EmptyCellList[randomIndex];
             
             m_EmptyCellList.RemoveAt(randomIndex);
-            CellObject newWall = ObjectSpawner.Instance.GenerateWall(CellToWorld(coord));
+            CellObject newWall = ObjectSpawner.Instance.GenerateFood(CellToWorld(coord));
             AddObject(newWall,coord);
         }
     }
@@ -123,7 +128,7 @@ public class BoardManager : MonoBehaviour
             
             m_EmptyCellList.RemoveAt(randomIndex);
 
-            CellObject newFood = ObjectSpawner.Instance.GenerateFood(CellToWorld(coord));
+            CellObject newFood = ObjectSpawner.Instance.GenerateWall(CellToWorld(coord));
             AddObject(newFood,coord);
         }
     }

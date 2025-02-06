@@ -96,11 +96,12 @@ public class PlayerController : MonoBehaviour
             {
                 GameManager.Instance.TurnManager.Tick();
                 if(cellData.ContainedObject == null) MoveTo(newCellTarget,false);
-                else if (cellData.ContainedObject.PlayerWantsToEnter())
+                else
                 {
-                    MoveTo(newCellTarget,false);
+                    bool canPlayerEnter = cellData.ContainedObject.PlayerWantsToEnter();
+                    if(canPlayerEnter) MoveTo(newCellTarget,false);
+                    else m_Animator.SetTrigger("Attack");
                 }
-                else if(!cellData.ContainedObject.PlayerWantsToEnter()) m_Animator.SetTrigger("Attack");
             }
         }
     }
