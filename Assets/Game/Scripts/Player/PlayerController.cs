@@ -12,9 +12,12 @@ public class PlayerController : MonoBehaviour
     private bool m_IsMoving = false;
     private Vector3 m_MoveTarget;
 
+    private Animator m_Animator;
+
     private void Awake()
     {
         ObserverManager.Attach(EventId.Lose, param => { m_IsGameOver = true;});
+        if (m_Animator == null) m_Animator = transform.GetComponentInChildren<Animator>();
     }
 
     public void Spawn(BoardManager boardManager, Vector2Int cell)
@@ -26,15 +29,12 @@ public class PlayerController : MonoBehaviour
     public void MoveTo(Vector2Int cell, bool immediate)
     {
         m_CellPosition = cell;
+        m_IsMoving = !immediate;
 
-        if (immediate)
-        {
-            m_IsMoving = false;
-            transform.position = m_Board.CellToWorld(m_CellPosition);
-            
-        }
-        m_IsMoving = true;
-        m_MoveTarget = m_Board.CellToWorld(m_CellPosition);
+        if (immediate) transform.position = m_Board.CellToWorld(m_CellPosition);
+        else m_MoveTarget = m_Board.CellToWorld(m_CellPosition);
+        
+        m_Animator.SetBool("Moving", m_IsMoving);
     }
 
     public void Init()
@@ -57,6 +57,7 @@ public class PlayerController : MonoBehaviour
             if (transform.position == m_MoveTarget)
             {
                 m_IsMoving = false;
+                m_Animator.SetBool("Moving",false);
                 var cellData = m_Board.GetCellData(m_CellPosition);
                 if(cellData.ContainedObject != null) cellData.ContainedObject.PlayerEntered();
             }
@@ -95,12 +96,12 @@ public class PlayerController : MonoBehaviour
             {
                 GameManager.Instance.TurnManager.Tick();
                 if(cellData.ContainedObject == null) MoveTo(newCellTarget,false);
-                else if (cellData.ContainedObject.PlayerWantsToEnter())
+                else
                 {
-                    MoveTo(newCellTarget,false);
-                    
+                    bool canPlayerEnter = cellData.ContainedObject.PlayerWantsToEnter();
+                    if(canPlayerEnter) MoveTo(newCellTarget,false);
+                    else m_Animator.SetTrigger("Attack");
                 }
-                
             }
         }
     }

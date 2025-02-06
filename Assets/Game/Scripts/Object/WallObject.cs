@@ -8,7 +8,7 @@ public class WallObject : CellObject
 {
     public List<Tile> ObstackleTileList;
 
-    private Tile OriginalTile;
+    [SerializeField] private Tile OriginalTile;
     [SerializeField] private int m_HealthPoint;
     
     public override void Init(Vector2Int cell)
