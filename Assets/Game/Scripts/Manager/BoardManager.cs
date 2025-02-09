@@ -70,6 +70,7 @@ public class BoardManager : MonoBehaviour
         GenerateExitCell();
         GenerateFood();
         GenerateWall();
+        GenerateEnemy();
     }
 
    
@@ -130,6 +131,21 @@ public class BoardManager : MonoBehaviour
 
             CellObject newFood = ObjectSpawner.Instance.GenerateWall(CellToWorld(coord));
             AddObject(newFood,coord);
+        }
+    }
+
+    void GenerateEnemy()
+    {
+        int enemyCount = 3;
+        for (int i = 0; i < enemyCount; ++i)
+        {
+            int randomIndex = Random.Range(0, m_EmptyCellList.Count);
+            Vector2Int coord = m_EmptyCellList[randomIndex];
+
+            m_EmptyCellList.RemoveAt(randomIndex);
+
+            CellObject newEnemy = ObjectSpawner.Instance.GenerateEnemy(CellToWorld(coord));
+            AddObject(newEnemy,coord);
         }
     }
 
