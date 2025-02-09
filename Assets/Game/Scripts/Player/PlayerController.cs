@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,10 +15,17 @@ public class PlayerController : MonoBehaviour
 
     private Animator m_Animator;
 
+    public Vector2Int Cell => m_CellPosition;
+
     private void Awake()
     {
         ObserverManager.Attach(EventId.Lose, param => { m_IsGameOver = true;});
         if (m_Animator == null) m_Animator = transform.GetComponentInChildren<Animator>();
+    }
+
+    private void OnDestroy()
+    {
+        ObserverManager.Detach(EventId.Lose, param => { m_IsGameOver = true;});
     }
 
     public void Spawn(BoardManager boardManager, Vector2Int cell)

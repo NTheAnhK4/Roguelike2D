@@ -8,6 +8,7 @@ public class ObjectSpawner : Singleton<ObjectSpawner>
     [SerializeField] private Transform objectHolder;
     public List<Transform> FoodPrefabList;
     public List<Transform> WallPrefabList;
+    public List<Transform> EnemyPrefabList;
     protected override void Awake()
     {
         base.Awake();
@@ -24,6 +25,12 @@ public class ObjectSpawner : Singleton<ObjectSpawner>
         Transform objectPrefab = prefabList[randomIndex];
         CellObject newObject = PoolingManager.Spawn(objectPrefab.gameObject, objectPosition, default, objectHolder).GetComponent<CellObject>();
         return newObject;
+    }
+
+    public CellObject GenerateEnemy(Vector3 enemyPosition)
+    {
+        CellObject newEnemy = SpawnObject(EnemyPrefabList, enemyPosition);
+        return newEnemy;
     }
     public CellObject GenerateFood(Vector3 foodPosition)
     {
